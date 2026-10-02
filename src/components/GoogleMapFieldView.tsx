@@ -1058,14 +1058,14 @@ export const GoogleMapFieldView: React.FC<GoogleMapFieldViewProps> = ({
       )}
 
       {/* Main Google Map Container */}
-      <div className="flex-1 w-full h-full relative">
+      <div className="flex-1 w-full h-full relative google-map-container touch-none">
         <APIProvider apiKey={apiKey} libraries={['places', 'geometry']}>
           <Map
             defaultCenter={defaultCenter}
             defaultZoom={17}
             mapId="DEMO_MAP_ID"
-            className="w-full h-full"
-            style={{ width: '100%', height: '100%' }}
+            className="w-full h-full google-map-container touch-none"
+            style={{ width: '100%', height: '100%', touchAction: 'none' }}
             internalUsageAttributionIds={['gmp_mcp_codeassist_v1_aistudio']}
             mapTypeId={mapType}
             tilt={tilt}

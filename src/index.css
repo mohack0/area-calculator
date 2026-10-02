@@ -33,3 +33,22 @@
   opacity: 1;
   transform: scale(1.25);
 }
+
+/* Horizontal flex-scroll styling for touch devices */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Google Map container styles: prevent browser gesture conflicts (like scrolling) while drawing or dragging vertices */
+.google-map-container,
+.google-map-container .gm-style,
+.gm-style,
+.gm-style canvas,
+.gm-style [role="region"] {
+  touch-action: none;
+}
+
