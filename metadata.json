@@ -1,0 +1,10 @@
+{
+  "name": "Field Measure Pro",
+  "description": "Measure agricultural fields, farms, plots, and land boundaries with GPS walking, freehand touch drawing, and high-precision boundary adjustment.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

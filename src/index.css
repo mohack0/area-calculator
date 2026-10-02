@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+/* Leaflet touch and custom control styling */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  font-family: inherit;
+  z-index: 10;
+}
+
+/* Custom vertex and handle markers */
+.vertex-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease;
+}
+
+.vertex-marker:hover, .vertex-marker:active {
+  transform: scale(1.3);
+}
+
+.midpoint-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.85;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.midpoint-marker:hover {
+  opacity: 1;
+  transform: scale(1.25);
+}
