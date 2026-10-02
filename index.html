@@ -2,17 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Field Measure Pro</title>
-    <meta name="description" content="Measure agricultural fields, farms, plots, and land boundaries with GPS walking, freehand touch drawing, and high-precision boundary adjustment." />
-    <meta property="og:title" content="Field Measure Pro" />
-    <meta property="og:description" content="Measure agricultural fields, farms, plots, and land boundaries with GPS walking, freehand touch drawing, and high-precision boundary adjustment." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Field Measure Pro - GPS & Satellite Land Area Calculator</title>
+    <meta name="description" content="Measure agricultural fields, farms, plots, and land boundaries with GPS walking, freehand touch drawing, and high-precision geodesic calculation." />
+    <meta name="theme-color" content="#020617" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta property="og:title" content="Field Measure Pro - GPS & Satellite Land Area Calculator" />
+    <meta property="og:description" content="Measure agricultural fields, farms, plots, and land boundaries with GPS walking, freehand touch drawing, and high-precision geodesic calculation." />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
+    <!-- Single Page Application redirect script for GitHub Pages -->
+    <script>
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
   </head>
-  <body>
+  <body class="bg-slate-950 text-slate-100 overflow-hidden antialiased">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-
